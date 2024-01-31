@@ -2,8 +2,6 @@
 /Gui/
 /IOFactory/
 /Layouts/
-/MainClassEditor$1.class
-/MainClassEditor.class
 /MenuEvents/
 /Menus/
 /OptionDialogs/
@@ -11,3 +9,9 @@
 /alarm/
 /component_listeners/
 /core/
+/images/
+/images_small/
+/other/
+/spelling/
+/MainClassEditor$1.class
+/MainClassEditor.class

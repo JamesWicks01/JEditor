@@ -60,7 +60,7 @@ public class RibbonMenu extends JPanel{
 	public void init(){
 
 		newtab = new RibbonButton("New tab","Open a new tab");
-		open = new RibbonButton("Open" , "Open an existing file");
+		open = new RibbonButton("Open Project" , "Open an existing file");
 		save = new RibbonButton("Save" , "Save the current file");
 		saveas = new RibbonButton("Save As" , "Save the current file under a new name");
 		close = new RibbonButton("Close" , "Close the current file");
