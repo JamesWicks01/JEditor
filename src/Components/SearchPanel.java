@@ -10,6 +10,7 @@ import javax.swing.AbstractAction;
 import javax.swing.BoxLayout;
 import javax.swing.JCheckBox;
 import javax.swing.JComponent;
+import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
@@ -254,6 +255,8 @@ public class SearchPanel {
 
 			optionPanel = new JPanel(new FlowCustomLayout(FlowLayout.LEFT));
 			match = new JCheckBox("Case sensitive");
+			JCheckBox matchnumber = new JCheckBox("Times Word Appears");
+			final JLabel matchnumbertext = new JLabel("[Number Here]");
 			
 			match.addActionListener(new ActionListener() {
 				
@@ -263,7 +266,15 @@ public class SearchPanel {
 				}
 			});
 			
+			matchnumber.addActionListener(new ActionListener() {
+				@Override
+				public void actionPerformed(ActionEvent arg0) {
+					optionPanel.add(matchnumbertext);
+				}
+			});
+			
 			optionPanel.add(match);
+			optionPanel.add(matchnumber);
 		}
 		return optionPanel;
 	}
